@@ -1,0 +1,132 @@
+.container-login {
+    display: flex;
+
+
+    .container-image {
+        width: 50%;
+        height: 100vh;
+        background-color: #F3FFF2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        img {
+            width: clamp(23rem, 40vw, 31.25rem);
+        }
+
+    }
+
+    @media (max-width: $breakpoint-laptop) {
+        .container-image {
+            display: none;
+        }
+    }
+
+    .container-log-in {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .container-fill-in-login {
+
+            .container-instructions {
+                p {
+                    font-size: clamp( 1.20rem , 3vw , 1.25rem );
+                    margin-bottom: 16px;
+                }
+
+                h1 {
+                    font-size: clamp( 1.7rem , 5vw , 2rem);
+                    margin-bottom: 40px;
+                }
+            }
+
+            .container-inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            .container-forgot-password {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 24px;
+                margin-bottom: 56px;
+
+                span {
+                    color: #1E9E6A;
+                    cursor: pointer;
+                }
+
+                .remember-me {
+                    span {
+                        margin-left: 8px;
+                        color: black;
+                    }
+
+                }
+
+            }
+
+            .button {
+                width: 100%;
+                height: 50px;
+                margin-bottom: 20px;
+                background-color: #1E9E6A;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            .container-login-google {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                .button {
+                    background-color: #1A202C;
+                    gap: 8px;
+                }
+            }
+
+            .register {
+                display: flex;
+                gap: 4px;
+                width: clamp( 20rem , 80vw , 25rem);
+                margin-top: 30px;
+                position: absolute;
+                bottom: -1;
+                justify-content: center;
+                margin-bottom: 50px;
+                font-weight: 500;
+                
+
+                span {
+                    color: #1E9E6A;
+                    cursor: pointer;
+                }
+
+            }
+
+
+        }
+
+
+
+    }
+
+    @media (max-width: $breakpoint-laptop) {
+        .container-log-in {
+            width: 100%;
+        }
+    }
+}

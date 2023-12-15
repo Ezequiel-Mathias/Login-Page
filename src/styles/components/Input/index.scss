@@ -1,0 +1,35 @@
+.container-input {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    p { 
+        color: black;
+        margin-bottom: 8px;
+    }
+
+    .input {
+        height: 45px;
+        width:  clamp( 20rem , 77vw , 24.375rem); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        
+        input {
+
+            color: black;
+            font-weight: 500;
+            height: 100%;
+            width: 100%;
+            border: 1px solid;
+            border-color: #E8E8E8;
+            padding: 16px;
+            background-color: #F7FAFC;
+            border-radius: 4px;
+
+        }
+
+    }
+
+}
