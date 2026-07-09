@@ -1,5 +1,7 @@
 import React from "react";
 import Input from "../../components/Input";
+import google from "../../assets/google.png";
+import presentation from "../../assets/presentation.png";
 
 const Login: React.FC = () => {
 
@@ -7,7 +9,7 @@ const Login: React.FC = () => {
         <div className="container-login">
 
             <div className="container-image">
-                <img src="https://firebasestorage.googleapis.com/v0/b/pagelogin-67e39.appspot.com/o/word.svg?alt=media&token=4f81e864-b87e-4eea-9e2e-bf22ee2a4ba7" alt="" />
+                <img src={presentation} alt="" />
             </div>
 
             <div className="container-log-in">
@@ -38,7 +40,7 @@ const Login: React.FC = () => {
 
                     <div className="container-login-google">
                         <div className="button">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/pagelogin-67e39.appspot.com/o/google.svg?alt=media&token=8c34534a-1dc5-4188-91e3-c7505b40eef1"></img>
+                            <img src={google} alt=""></img>
                             <span>Ou faça login com o Google</span>
                         </div>
                     </div>
